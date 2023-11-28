@@ -5,22 +5,26 @@
 }
 
 header {
-    height: 100vh;
+    height: 120vh;
     background: linear-gradient(#140a30ae,#140a30ae), url(./image/main_background.jpg) no-repeat center center / cover;
 }
 
-nav {   
-    margin-left: 10.5vh;
-    margin-top: 2vh;
-    position: fixed;
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav { 
+    margin-top: 3vh;
+    position: relative;
     background-color: #FE9237;
-    width: 90%;
+    width: 95%;
     border: none;
     border-radius: 25px;
     height: 15vh;
 }
 
-nav ul {
+.menu nav ul {
     list-style-type: none;
     padding: 1%;
     height: 100%;
@@ -30,12 +34,12 @@ nav ul {
     justify-content: space-between;
 }
 
-nav ul img {
+.menu nav ul img {
     height: 15vh;
     width: 30vh;
 }
 
-nav ul li {
+.menu nav ul li {
     width: 30vh;
     display: flex;
     justify-content: center;
@@ -44,10 +48,56 @@ nav ul li {
     background: #DF0D21;
 }
 
-nav ul li a{
+.menu nav ul li a{
     display: flex;
     margin: 0;
     font-size: 2em;
     text-decoration: none;
+    color: white;
+}
+
+.headline {
+    text-align: center;
+    height: 50%;
+}
+
+.headline hr {
+    color: white;
+    width: 90%;
+    margin-left: 10.5vh;
+}
+
+.headline p {
+    color: white;
+    font-size: 8em;
+    padding: 18px;
+}
+
+.description {
+    height: 50vh;
+    width: 100%;
+    background: #140a30;
+    display: flex;
+}
+
+.description img {
+    padding-left: 3%;
+}
+
+.description div {
+    margin-top: 5%;
+    text-align: justify;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.description div h1 {
+    color: white;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2%;
+}
+
+.description div p {
     color: white;
 }
