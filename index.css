@@ -101,3 +101,34 @@ header {
 .description div p {
     color: white;
 }
+
+.blocks {
+    height: 70vh;
+    width: 100%;
+    background: #140a30;
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeadLineBlocks {
+    background: #140a30;
+    display: flex;
+    justify-content: center;
+}
+
+.HeadLineBlocks h1 {
+    color: white;
+    font-size: 3em;
+}
+
+.blocks p {
+    margin: 10vh;
+    height: 50vh;
+    width: 35vh;
+    border: none;
+    border-radius: 25px;
+    background-color: #FE9237;
+    padding: 1vh;
+    color: white;
+    font-size: 1em;
+}
