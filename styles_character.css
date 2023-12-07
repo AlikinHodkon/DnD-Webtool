@@ -1,0 +1,79 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Темный синий */
+    color: #fff; /* Белый текст */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.character-creation {
+    width: 50%;
+    padding: 20px;
+    background-color: #34495e; /* Серый-синий */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+}
+
+input[type="text"],
+select {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #000; /* Черный текст */
+    background-color: #ecf0f1; /* Светлый серый */
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3498db; /* Светло-синий */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Серый-синий при наведении */
+}
+
+#char-background {
+    min-height: 100px; /* Минимальная высота поля предыстории */
+    resize: vertical; /* Разрешить изменение высоты поля */
+}
+/* ... (ваш текущий CSS) ... */
+
+
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    color: #000; /* Черный текст */
+    background-color: #ecf0f1; /* Светлый серый */
+    resize: vertical; /* Разрешить изменение высоты по вертикали */
+    min-height: 100px; /* Минимальная высота поля предыстории */
+    line-height: 1.5; /* Интерлиньяж для лучшей читаемости */
+    width: 100%;
+}
