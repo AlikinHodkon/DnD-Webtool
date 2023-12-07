@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_character.css">
+    <title>Создание персонажа</title>
+</head>
+<body>
+    <div class="character-creation">
+        <h1>Создание персонажа</h1>
+        <form action="#">
+            <label for="char-name">Имя персонажа:</label>
+            <input type="text" id="char-name" name="char-name" required>
+            
+            <label for="char-class">Класс:</label>
+            <select id="char-class" name="char-class">
+                <option value="fighter">Воин</option>
+                <option value="wizard">Маг</option>
+                <option value="rogue">Плут</option>
+                <!-- Добавьте другие классы по желанию -->
+            </select>
+            
+            <label for="char-race">Раса:</label>
+            <select id="char-race" name="char-race">
+                <option value="human">Человек</option>
+                <option value="elf">Эльф</option>
+                <option value="dwarf">Дварф</option>
+                <!-- Добавьте другие расы по желанию -->
+            </select>
+            
+            <label for="char-background">Предыстория:</label>
+            <textarea id="char-background" name="char-background" rows="4"></textarea>
+            
+            <input type="submit" value="Создать персонажа">
+        </form>
+    </div>
+</body>
+</html>
