@@ -11,49 +11,50 @@ header {
 
 .menu {
     display: flex;
-    justify-content: center;
+    background-color: #3914AF;
+    box-shadow: 0 4px 5px rgb(255, 255, 255, 0.5);
+}
+
+.menu img {
+    height: 15vh;
+    width: 30vh;
+    margin-left: 5vh;
 }
 
 .menu nav { 
-    margin-top: 3vh;
     position: relative;
-    background-color: #FE9237;
-    width: 95%;
+    width: 100%;
     border: none;
-    border-radius: 25px;
-    height: 15vh;
 }
 
 .menu nav ul {
     list-style-type: none;
-    padding: 1%;
-    height: 100%;
-    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu nav ul img {
-    height: 15vh;
-    width: 30vh;
+    float: inline-end;
+    margin-right: 5vh;
 }
 
 .menu nav ul li {
-    width: 30vh;
-    display: flex;
-    justify-content: center;
+    margin-top: 5vh;
     border: none;
-    border-radius: 25px;
-    background: #DF0D21;
+    margin-right: 2vh;
 }
 
 .menu nav ul li a{
     display: flex;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
+}
+
+.menu nav ul li a:hover:not(.action) {
+    background-color: #0000005a;
+}
+
+.action {
+    background-color: #0000005a;
 }
 
 .headline {
@@ -127,7 +128,7 @@ header {
     width: 35vh;
     border: none;
     border-radius: 25px;
-    background-color: #FE9237;
+    background-color: #3914AF;
     padding: 1vh;
     color: white;
     font-size: 1em;
