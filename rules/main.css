@@ -18,9 +18,8 @@ header {
 
 .menu {
     display: flex;
-    background-color: #3914AF;
-    box-shadow: 0 4px 5px rgb(255, 255, 255, 0.5);
     width: 100%;
+    /* margin-right: 95px; */
 }
 
 .title {
@@ -36,11 +35,6 @@ header {
     font-size: 5em;
 }
 
-@media (max-width: 700px) {
-    .title{
-        display: none;
-    }
-}
 
 header img {
     height: 15vh;
@@ -81,6 +75,7 @@ header img {
 }
 
 .burger {
+    display: none;
     position: fixed;
     width: 60px;
     height: 5vh;
@@ -189,4 +184,60 @@ header img {
 
 .text p {
     color: white;
+}
+
+@media (max-width: 950px) {
+    .menu{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+@media (max-width: 500px){
+    .menu{
+        display: none;
+    }
+
+    .newSideBar{
+        width: 100%;
+        right: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .newSideBar ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .newSideBar ul li ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .submenu{
+        transform-origin: 0 0;
+        transform: rotateX(-90deg);
+        visibility: hidden;
+        opacity: 0;
+        transition: .3s all linear;
+    }
+
+    .newSideBar ul li:hover > .submenu{
+        opacity: 1;
+        visibility: visible;
+        transform: rotateX(0deg);
+        transition: .3s all linear;
+    }
+
 }

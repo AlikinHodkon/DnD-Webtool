@@ -9,7 +9,7 @@
 <body>
     <header>
         <img src="../image/Dungeons-and-Dragons-Logo.png">
-        <!-- <div class="menu">
+        <div class="menu">
             <nav>
                 <ul>
                     <li><a href="#">Главная</a></li>
@@ -19,10 +19,10 @@
                     <li><a href="#">Профиль</a></li>
                 </ul>
             </nav>
-        </div> -->
-        <div class="title">
-            <h1>Правила</h1>
         </div>
+        <!-- <div class="title">
+            <h1>Правила</h1>
+        </div> -->
         <div onclick="showMenu()" class="burger">
             <div class="burgerLine burgerLine1"></div>
             <div class="burgerLine burgerLine2"></div>
@@ -34,22 +34,25 @@
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li>
-                    <ul><a href="#">Играть</a>
+                    <a href="#">Играть</a>
+                    <ul class="submenu">
                         <li>Создание комнаты</li>
                         <li>Подключиться к комнате</li>
                     </ul>
                  </li>
                 <li>
-                    <ul><a href="#">Правила</a>
-                    <li><a href="#">Расы</a></li>
-                    <li><a href="#">Классы</a></li>
+                    <a href="#">Правила</a>
+                    <ul class="submenu">
+                        <li><a href="#">Расы</a></li>
+                        <li><a href="#">Классы</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Поддержка</a></li>
                 <li>
-                    <ul><a href="#">Профиль</a>
-                    <li>Страница игрока</li>
-                    <li>Персонажи игрока</li>
+                    <a href="#">Профиль</a>
+                    <ul class="submenu">
+                        <li>Страница игрока</li>
+                        <li>Персонажи игрока</li>
                     </ul>
                 </li>
             </ul>
