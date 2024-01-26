@@ -8,29 +8,98 @@
 </head>
 <body>
     <header>
-        <div class="menu">
+        <img src="../image/Dungeons-and-Dragons-Logo.png">
+        <!-- <div class="menu">
             <nav>
                 <ul>
+                    <li><a href="#">Главная</a></li>
                     <li><a href="#">Играть</a></li>
-                    <li><a href="#">Правила</a></li>
-                    <img src="./image/Dungeons-and-Dragons-Logo.png">
+                    <li><a class="action" href="#">Правила</a></li>
+                    <li><a href="#">Поддержка</a></li>
                     <li><a href="#">Профиль</a></li>
-                    <li><a href="#">Репорт</a></li>
                 </ul>
             </nav>
-        </div>  
+        </div> -->
+        <div class="title">
+            <h1>Правила</h1>
+        </div>
+        <div onclick="showMenu()" class="burger">
+            <div class="burgerLine burgerLine1"></div>
+            <div class="burgerLine burgerLine2"></div>
+            <div class="burgerLine burgerLine3"></div>
+            <div class="burgerLine burgerLine4"></div>
+        </div> 
     </header>
-    <div class="sidebar">
+        <div class="newSideBar">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li>
+                    <ul><a href="#">Играть</a>
+                        <li>Создание комнаты</li>
+                        <li>Подключиться к комнате</li>
+                    </ul>
+                 </li>
+                <li>
+                    <ul><a href="#">Правила</a>
+                    <li><a href="#">Расы</a></li>
+                    <li><a href="#">Классы</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Поддержка</a></li>
+                <li>
+                    <ul><a href="#">Профиль</a>
+                    <li>Страница игрока</li>
+                    <li>Персонажи игрока</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <script>
+            function showMenu(){
+                const sidebar = document.querySelector(".newSideBar");
+                if (sidebar.style.display == "flex"){
+                    sidebar.style.display = "none"
+                }
+                else{
+                    sidebar.style.display = "flex"
+                }
+            }
+            (function () {
+                const burger = document.querySelector(".burger")
+                burger.addEventListener("click", () => {
+                    burger.classList.toggle("burgerActive")
+                })
+            }())
+        </script>
+    <!-- <div class="sidebar">
         <ul>
             <ul>Главная</ul>
             <ul>Раса
                 <li>Человек</li>
                 <li>Эльф</li>
-                <li>Орк</li>
+                <li>Полуорк</li>
+                <li>Полурослик</li>
+                <li>Полуэльф</li>
+                <li>Тифлинг</li>
+                <li>Драконорожденный</li>
+                <li>Дварф</li>
+                <li>Гном</li>
             </ul>
             <ul>Классы</ul>
+                <li>Бард</li>
+                <li>Варвар</li>
+                <li>Воин</li>
+                <li>Волшебник</li>
+                <li>Друид</li>
+                <li>Жрец</li>
+                <li>Колдун</li>
+                <li>Монах</li>
+                <li>Паладин</li>
+                <li>Плут</li>
+                <li>Следопыт</li>
+                <li>Чародей</li>
         </ul>
-    </div>
+    </div> -->
     <div class="text">
         <p>System Reference Document (SRD 5.1) — это справочник по пятой редакции Dungeons and Dragons, распространяемый по Открытой игровой лицензии. Другими словами, это бесплатные правила для D&D 5e на русском языке, собранные из трёх основных книг: Книги игрока, Руководства мастера и Справочника по монстрам.
 
