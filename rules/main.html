@@ -33,14 +33,14 @@
         <div class="newSideBar">
             <ul>
                 <li><a href="#">Главная</a></li>
-                <li>
+                <li onclick="showMenuMobile(0)">
                     <a href="#">Играть</a>
                     <ul class="submenu">
                         <li>Создание комнаты</li>
                         <li>Подключиться к комнате</li>
                     </ul>
                  </li>
-                <li>
+                <li onclick="showMenuMobile(1)">
                     <a href="#">Правила</a>
                     <ul class="submenu">
                         <li><a href="#">Расы</a></li>
@@ -48,7 +48,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Поддержка</a></li>
-                <li>
+                <li onclick="showMenuMobile(2)">
                     <a href="#">Профиль</a>
                     <ul class="submenu">
                         <li>Страница игрока</li>
@@ -67,8 +67,21 @@
                     sidebar.style.display = "flex"
                 }
             }
+            function showMenuMobile(number){
+                var submenu = document.getElementsByClassName("submenu")
+                    if (submenu[number].style.opacity == 0){
+                        submenu[number].style.opacity = 1;
+                        submenu[number].style.pointerEvents = "auto"
+                        submenu[number].style.position = "static"
+                    }
+                    else{
+                        submenu[number].style.opacity = 0;
+                        submenu[number].style.pointerEvents = "none"
+                        submenu[number].style.position = "absolute"
+                    }
+                }
             (function () {
-                const burger = document.querySelector(".burger")
+                const burger = document.querySelector(".burger")    
                 burger.addEventListener("click", () => {
                     burger.classList.toggle("burgerActive")
                 })
