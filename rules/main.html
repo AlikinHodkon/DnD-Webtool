@@ -11,12 +11,37 @@
         <img src="../image/Dungeons-and-Dragons-Logo.png">
         <div class="menu">
             <nav>
-                <ul>
+                <ul class="topmenu">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">Играть</a></li>
-                    <li><a class="action" href="#">Правила</a></li>
+                    <li>
+                        <a href="#">Играть</a>
+                        <ul class="hoverMenu">
+                            <li><a href="#">Создать комнату</a></li>
+                            <li><a href="#">Подключиться к комнате</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="action" href="#">Правила</a>
+                        <ul class="hoverMenu">
+                            <li><a href="#">Расы</a></li>
+                            <li><a href="#">Классы</a></li>
+                            <li><a href="#">Предметы</a></li>
+                            <li><a href="#">Предыстории</a></li>
+                            <li><a href="#">Механики</a></li>                        <li><a href="#">Расы</a></li>
+                            <li><a href="#">Классы</a></li>
+                            <li><a href="#">Предметы</a></li>
+                            <li><a href="#">Предыстории</a></li>
+                            <li><a href="#">Механики</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Поддержка</a></li>
-                    <li><a href="#">Профиль</a></li>
+                    <li>
+                        <a href="#">Профиль</a>
+                        <ul class="hoverMenu">
+                            <li><a href="#">Страница игрока</a></li>
+                            <li><a href="#">Персонажи игрока</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -36,8 +61,8 @@
                 <li onclick="showMenuMobile(0)">
                     <a href="#">Играть</a>
                     <ul class="submenu">
-                        <li>Создание комнаты</li>
-                        <li>Подключиться к комнате</li>
+                        <li><a href="#">Создать комнату</a></li>
+                        <li><a href="#">Подключиться к комнате</a></li>
                     </ul>
                  </li>
                 <li onclick="showMenuMobile(1)">
@@ -45,14 +70,17 @@
                     <ul class="submenu">
                         <li><a href="#">Расы</a></li>
                         <li><a href="#">Классы</a></li>
+                        <li><a href="#">Предметы</a></li>
+                        <li><a href="#">Предыстории</a></li>
+                        <li><a href="#">Механики</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Поддержка</a></li>
                 <li onclick="showMenuMobile(2)">
                     <a href="#">Профиль</a>
                     <ul class="submenu">
-                        <li>Страница игрока</li>
-                        <li>Персонажи игрока</li>
+                        <li><a href="#">Страница игрока</a></li>
+                        <li><a href="#">Персонажи игрока</a></li>
                     </ul>
                 </li>
             </ul>
