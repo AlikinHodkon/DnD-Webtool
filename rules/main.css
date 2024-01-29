@@ -6,7 +6,8 @@
 
 body {
     /* background: #140a30; */
-    background: #45036F;
+    /* background: #45036F; */
+    background: linear-gradient(#f0e4dc39, #f0e4dc39), url(../image/main_background.jpg) no-repeat center center / cover;
 }
 
 header {
@@ -14,7 +15,8 @@ header {
     width: 100%;
     display: flex;
     /* background-color: #3914AF; */
-    background-color: #9A3FD5;
+    background-color: #7B001C;
+    /* background-color: #9A3FD5; */
     box-shadow: 0 4px 5px rgb(255, 255, 255, 0.5);
 }
 
@@ -33,7 +35,7 @@ header {
 }
 
 .title h1 {
-    color: white;
+    color: black;
     font-size: 5em;
 }
 
@@ -45,7 +47,7 @@ header img {
 
 .menu nav { 
     position: relative;
-    width: 100%;
+    width: 98%;
     border: none;
 }
 
@@ -60,6 +62,7 @@ header img {
 .topmenu li {
     border: none;
     margin-right: 2vh;
+    width: 15vw;
 }
 
 .topmenu li a{
@@ -73,12 +76,17 @@ header img {
 }
 
 .hoverMenu{
-    max-width: 15vw;
-    background-color: #9A3FD5;
+    width: 15vw;
+    /* background-color: #9A3FD5; */
+    background-color: #7B001C;
     transform-origin: 0 0;
     transform: rotateX(-90deg);
     opacity: 0;
     transition: .3s all linear;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 1;
+    position: absolute;
 }
 
 .hoverMenu li{
@@ -90,6 +98,8 @@ header img {
     transform: rotateX(0deg);
     opacity: 1;
     transition: .3s all linear;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .hoverMenu li a{
@@ -147,7 +157,7 @@ header img {
 }
 
 .newSideBar{
-    background-color: yellowgreen;
+    background-color: darkred;
     display: none;
 }
 
@@ -165,7 +175,7 @@ header img {
 
 .newSideBar ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5em;
 }
 
@@ -190,12 +200,92 @@ header img {
     margin: 1em;
 }
 
+.container{
+    width: 80%;
+    margin-left: 10%;
+    background: #f8f4dc;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
 .text {
     padding: 1vw;
 }
 
 .text p {
+    color: black;
+}
+
+.text img{
+    float: right;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.shortcut{
+    margin: 1%;
+    float: left;
+    width: 15%;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.shortcut h1{
+    text-align: center;
+    color: black
+}
+
+.shortcut ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    flex-direction: column;
+    min-width: 5vw;
+}
+
+.shortcut ul li{
+    /* background: #9A3FD5; */
+    /* background-color: #3914AF; */
+    background-color: #7B001C;
+    border: 2px solid white;
+    border-radius: 6px;
+    width: 10vw;
+    text-align: center;
+    margin: 1.5%;
+}
+
+.shortcut ul li a{
+    text-decoration: none;
     color: white;
+    font-size: 1em;
+}
+
+.describe{
+    padding: 1vw;
+}
+
+.describe h1{
+    color: black;
+    text-align: center;
+}
+
+.describe p{
+    color: black;
+    font-size: 1em;
+}
+
+.creation{
+    padding: 1vw;
+}
+
+.creation h1{
+    color: black;
+    text-align: center;
+}
+
+.creation p{
+    color: black;
+    font-size: 1em;
 }
 
 @media (max-width: 1100px) {
@@ -245,7 +335,7 @@ header img {
     }
 
     .submenu li{
-        background-color: #8AB32D;
+        background-color: #7B001C;
     }
 
     .submenu li a{
